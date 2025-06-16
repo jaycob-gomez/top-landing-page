@@ -1,0 +1,80 @@
+/* Basic CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom Properties */
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --dark-gray-bg: #1F2937;
+
+    --clr-main: #F9FAF8; 
+    --clr-secondary: #E5E7EB; 
+
+    --fs-48: 48px;
+    --fs-36: 36px;
+    --fs-24: 24px;
+    --fs-18: 18px;
+
+}
+
+/* Styles */
+html,
+body {
+    height: 100vh;
+    font-family: var(--font-family);
+}
+
+.hero {
+    background-color: var(--dark-gray-bg);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 300px;
+}
+
+.logo {
+    font-size: var(--fs-24);
+    color: var(--clr-main);
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color:  var(--clr-secondary);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 0 300px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+h1 {
+    font-size: var(--fs-48);
+    color: var(--clr-main);
+}
+
+.hero-text p {
+    font-size: var(--fs-18);
+    color: var(--clr-secondary);
+}
